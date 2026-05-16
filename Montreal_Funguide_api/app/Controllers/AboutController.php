@@ -13,10 +13,20 @@ class AboutController extends BaseController
 
     private const API_VERSION = '1.0.0';
 
-    // TODO: Create Auth Controller
+    // TODO: Create Auth Controller 
+    // - enamble user registration and authorization
     // TODO: Create Fungi Controller
+    // - fungi class
+    // - (fungi)habitat class
+    // - (fungi)species class
     // TODO: Create Recipe Controller
+    // - recipe class
+    // - ingredient class
+    // - calorie class
     // TODO: Create Map Controller
+    // - map class
+    // - location class
+    // - trip class
 
     public function handleAboutWebService(Request $request, Response $response): Response
     {
