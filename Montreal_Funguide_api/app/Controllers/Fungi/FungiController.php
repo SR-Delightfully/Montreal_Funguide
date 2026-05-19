@@ -2,21 +2,48 @@
 
 declare(strict_types=1);
 
-namespace App\Controllers;
+namespace App\Controllers\Fungi;
 
+use App\Controllers\BaseController;
 use Psr\Http\Message\ResponseInterface as Response;
+use Psr\Http\Message\ServerRequestInterface as Request;
 
-// TODO: Create Species Controller
-abstract class FungiController
+class FungiController extends BaseController
 {
-
-    public function __construct() {}
-    protected function renderJson(Response $response, array $data, int $status_code = 200): Response
+    public function index(Request $request, Response $response): Response
     {
-        // var_dump($data);
-        $payload = json_encode($data, JSON_UNESCAPED_SLASHES |    JSON_PARTIAL_OUTPUT_ON_ERROR);
-        //-- Write JSON data into the response's body.
-        $response->getBody()->write($payload);
-        return $response->withStatus($status_code)->withAddedHeader(HEADERS_CONTENT_TYPE, APP_MEDIA_TYPE_JSON);
+        return $this->renderJson($response, [
+            "message" => "List all fungi"
+        ]);
+    }
+
+    public function create(Request $request, Response $response): Response
+    {
+        return $this->renderJson($response, [
+            "message" => "Create fungi"
+        ]);
+    }
+
+    public function show(Request $request, Response $response, array $args): Response
+    {
+        return $this->renderJson($response, [
+            "fungi_id" => (int)$args['id']
+        ]);
+    }
+
+    public function update(Request $request, Response $response, array $args): Response
+    {
+        return $this->renderJson($response, [
+            "message" => "Update fungi",
+            "fungi_id" => (int)$args['id']
+        ]);
+    }
+
+    public function delete(Request $request, Response $response, array $args): Response
+    {
+        return $this->renderJson($response, [
+            "message" => "Delete fungi",
+            "fungi_id" => (int)$args['id']
+        ]);
     }
 }

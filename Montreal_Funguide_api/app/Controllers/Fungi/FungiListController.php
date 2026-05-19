@@ -8,40 +8,37 @@ use App\Controllers\BaseController;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 
-class SpeciesController extends BaseController
+class FungiListController extends BaseController
 {
     public function index(Request $request, Response $response): Response
     {
-        return $this->renderJson($response, ["message" => "All species"]);
+        return $this->renderJson($response, [
+            "message" => "Filtered fungi list"
+        ]);
     }
 
     public function create(Request $request, Response $response): Response
     {
-        return $this->renderJson($response, ["message" => "Create species"]);
+        return $this->renderJson($response, [
+            "message" => "Not used but required for REST consistency"
+        ]);
     }
 
     public function show(Request $request, Response $response, array $args): Response
     {
         return $this->renderJson($response, [
-            "species_id" => $args['id']
+            "message" => "Single fungi list item",
+            "id" => $args['id']
         ]);
     }
 
     public function update(Request $request, Response $response, array $args): Response
     {
-        return $this->renderJson($response, ["message" => "Update species"]);
+        return $this->renderJson($response, ["message" => "Update list item"]);
     }
 
     public function delete(Request $request, Response $response, array $args): Response
     {
-        return $this->renderJson($response, ["message" => "Delete species"]);
-    }
-
-    public function showByFungi(Request $request, Response $response, array $args): Response
-    {
-        return $this->renderJson($response, [
-            "fungi_id" => $args['id'],
-            "species" => []
-        ]);
+        return $this->renderJson($response, ["message" => "Delete list item"]);
     }
 }

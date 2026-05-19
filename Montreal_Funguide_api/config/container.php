@@ -24,8 +24,8 @@ $definitions = [
 
         $app = AppFactory::createFromContainer($container);
         // Set base path from APP_ROOT_DIR (empty in Docker, subdirectory name in Wampoon)
-        $app->setBasePath(APP_ROOT_DIR ? '/' . APP_ROOT_DIR : '');
-
+        // $app->setBasePath(APP_ROOT_DIR ? '/' . APP_ROOT_DIR : '');
+        $app->setBasePath('/Montreal_Funguide/Montreal_Funguide_api');
         // Register routes
         (require_once __DIR__ . '/../app/Routes/routes.php')($app);
 
