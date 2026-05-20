@@ -9,8 +9,8 @@
 >| API resources   | Link to where you can find them                         |
 >|-----------------|---------------------------------------------------------|
 >|     GBIF        | https://www.gbif.org/                                   | 
->| Air Quality API | https://api-ninjas.com/api/airquality                   | 
->| Nutrition API   | https://api-ninjas.com/api/nutrition#nutrition-endpoint | 
+>|    MealDB       | https://www.themealdb.com/api/json/v1/1/search.php?s=   | 
+>|  Nutrition API  | https://api-ninjas.com/api/nutrition#nutrition-endpoint | 
     	
     
 	
