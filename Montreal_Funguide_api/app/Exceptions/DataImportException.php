@@ -1,8 +1,9 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
 namespace App\Exceptions;
+
 use Slim\Exception\HttpSpecializedException;
 use Throwable;
 
@@ -16,10 +17,9 @@ class DataImportException extends HttpSpecializedException
     public function __construct(
         $request = null,
         string $message = 'Data import failed.',
-        int $code = 502,
         ?Throwable $previous = null
     ) {
-        parent::__construct($request, $message, $code, $previous);
+        parent::__construct($request, $message, $previous);
     }
 
     public function getSource(): string

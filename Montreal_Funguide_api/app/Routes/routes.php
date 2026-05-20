@@ -8,6 +8,7 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 
 use App\Controllers\AboutController;
 use App\Controllers\AuthController;
+use App\Controllers\UserController;
 
 use App\Controllers\Fungi\FungiController;
 use App\Controllers\Fungi\SpeciesController;
@@ -45,8 +46,15 @@ return static function (App $app): void {
         $auth->post('/login', [AuthController::class, 'login']);
     });
 
-    $app->group('/fungi', function ($fungi) {
+    $app->group('/users', function ($users) {
+        $users->get('/users', [UserController::class, 'index']);
+        $users->get('/users/{id}', [UserController::class, 'show']);
+        $users->post('/users', [UserController::class, 'create']);
+        $users->put('/users/{id}', [UserController::class, 'update']);
+        $users->delete('/users/{id}', [UserController::class, 'delete']);
+    });
 
+    $app->group('/fungi', function ($fungi) {
         $fungi->get('', [FungiController::class, 'index']);
         $fungi->post('', [FungiController::class, 'create']);
 
@@ -59,7 +67,6 @@ return static function (App $app): void {
     });
 
     $app->group('/recipes', function ($recipes) {
-
         $recipes->get('', [RecipeController::class, 'index']);
         $recipes->post('', [RecipeController::class, 'create']);
 
@@ -83,7 +90,6 @@ return static function (App $app): void {
     });
 
     $app->group('/map', function ($map) {
-
         $map->get('', [MapController::class, 'index']);
 
         $map->group('/locations', function ($locations) {

@@ -4,250 +4,218 @@ declare(strict_types=1);
 
 namespace App\Controllers;
 
-use DI\Container;
+use App\Domain\Models\UserModel;
+
+use Exception;
+
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
-use App\Domain\Models\UserModel;
-use App\Helpers\UserContext;
-use App\Helpers\FlashMessage;
-use Slim\Routing\RouteContext;
+
+use Slim\Exception\HttpBadRequestException;
+use Slim\Exception\HttpUnauthorizedException;
 
 class AuthController extends BaseController
 {
-    private UserModel $userModel;
-
-    public function __construct(Container $container)
-    {
-        parent::__construct($container);
-
-        $this->userModel = $container->get(UserModel::class);
-
-        UserContext::init();
+    public function __construct(
+        private UserModel $user_model
+    ) {
+        parent::__construct();
     }
 
-    public function showSigninForm(Request $request, Response $response, array $args): Response
+    public function register(Request $request, Response $response): Response
     {
-        $data = [
-            'page_title'   => 'Sign In',
-            'contentView'  => APP_VIEWS_PATH . '/auth/signinView.php',
-            'isNavBarShown'=> false,
-            'data'         => []
-        ];
+        try {
+            $data = $request->getParsedBody();
 
-        return $this->render($response, 'common/layout.php', $data);
+            $user_fname = trim($data['user_fname'] ?? '');
+            $user_lname = trim($data['user_lname'] ?? '');
+            $user_email = trim($data['user_email'] ?? '');
+            $user_password = $data['user_password'] ?? '';
+
+            if (
+                empty($user_fname) ||
+                empty($user_lname) ||
+                empty($user_email) ||
+                empty($user_password)
+            ) {
+                throw new HttpBadRequestException($request, 'All fields are required');
+            }
+
+            if (!filter_var($user_email, FILTER_VALIDATE_EMAIL)) {
+                throw new HttpBadRequestException($request, 'Invalid email format');
+            }
+
+            if (strlen($user_password) < 8) {
+                throw new HttpBadRequestException($request, 'Password must be at least 8 characters');
+            }
+
+            $existing_user = $this->user_model->findUserByEmail($user_email);
+
+            if ($existing_user) {
+                throw new HttpBadRequestException($request, 'Email already exists');
+            }
+
+            $base_handle = strtolower(preg_replace('/[^a-zA-Z0-9]/', '', $user_fname . '.' . $user_lname));
+            $user_handle = $base_handle;
+            $suffix = 1;
+
+            while (
+                $this->user_model->findUserByHandle($user_handle)
+            ) {
+                $user_handle = $base_handle . $suffix;
+                $suffix++;
+            }
+
+            $password_hash = password_hash($user_password, PASSWORD_DEFAULT);
+
+            $user_id = $this->user_model->createUser([
+                'user_handle' => $user_handle,
+                'user_fname' => $user_fname,
+                'user_lname' => $user_lname,
+                'user_email' => $user_email,
+                'user_password' => $password_hash,
+                'user_role' => 'user'
+            ]);
+
+            return $this->renderJson($response, [
+                'status' => 'success',
+                'code' => 201,
+                'message' => 'User registered successfully',
+                'data' => [
+                    'user_id' => $user_id,
+                    'user_handle' => $user_handle
+                ]
+            ], 201);
+        } catch (HttpBadRequestException $e) {
+            return $this->renderJson($response, [
+                'status' => 'error',
+                'code' => 400,
+                'message' => $e->getMessage()
+            ], 400);
+        } catch (Exception $e) {
+            return $this->renderJson($response, [
+                'status' => 'error',
+                'code' => 500,
+                'message' => 'Registration failed',
+                'error' => $e->getMessage()
+            ], 500);
+        }
     }
 
-
-    public function showSignupForm(Request $request, Response $response, array $args): Response
+    public function login(Request $request, Response $response): Response
     {
-        $data = [
-            'page_title'   => 'Sign Up',
-            'contentView'  => APP_VIEWS_PATH . '/auth/signupView.php',
-            'isNavBarShown'=> false,
-            'data'         => []
-        ];
+        try {
+            $data = $request->getParsedBody();
 
-        return $this->render($response, 'common/layout.php', $data);
-    }
-
-    public function showForgotPasswordForm(Request $request, Response $response, array $args): Response
-    {
-        $data = [
-            'page_title'   => 'Forgot Password',
-            'contentView'  => APP_VIEWS_PATH . '/auth/forgotPasswordView.php',
-            'isNavBarShown'=> false,
-            'data'         => []
-        ];
-
-        return $this->render($response, 'common/layout.php', $data);
-    }
-
-    public function showForgotEmailForm(Request $request, Response $response, array $args): Response
-    {
-        $data = [
-            'page_title'   => 'Forgot Email',
-            'contentView'  => APP_VIEWS_PATH . '/auth/forgotEmailView.php',
-            'isNavBarShown'=> false,
-            'data'         => []
-        ];
-
-        return $this->render($response, 'common/layout.php', $data);
-    }
-
-    public function processSignup(Request $request, Response $response, array $args): Response
-    {
-        $post = $request->getParsedBody();
-
-        $fname   = trim($post['first_name'] ?? '');
-        $lname   = trim($post['last_name'] ?? '');
-        $email   = trim($post['email'] ?? '');
-        $pass    = trim($post['password'] ?? '');
-        $confirm = trim($post['confirm_password'] ?? '');
-
-        if (!$fname || !$lname || !$email || !$pass || !$confirm) {
-            FlashMessage::error("Please fill in all fields.");
-            return $this->showSignupForm($request, $response, $args);
-        }
-
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            FlashMessage::error("Invalid email format.");
-            return $this->showSignupForm($request, $response, $args);
-        }
-
-        if ($pass !== $confirm) {
-            FlashMessage::error("Passwords do not match.");
-            return $this->showSignupForm($request, $response, $args);
-        }
-
-        if ($this->userModel->findByEmail($email)) {
-            FlashMessage::error("Email is already registered.");
-            return $this->showSignupForm($request, $response, $args);
-        }
-
-        $username = strtolower($fname . '.' . $lname);
-        $suffix = 1;
-        $baseUsername = $username;
-        while ($this->userModel->findByUsername($username)) {
-            $username = $baseUsername . $suffix;
-            $suffix++;
-        }
-
-        $this->userModel->createUser([
-            'username'   => $username,
-            'first_name' => $fname,
-            'last_name'  => $lname,
-            'email'      => $email,
-            'password'   => $pass,
-        ]);
-
-        FlashMessage::success("Account created successfully! Please sign in.");
-
-        $basePath = $request->getUri()->getBasePath();
-        return $response
-            ->withHeader('Location', $basePath . '/sign-in')
-            ->withStatus(302);
-    }
-
-    public function processSignin(Request $request, Response $response, array $args): Response
-    {
-        $post = $request->getParsedBody();
-        $email = trim($post['email'] ?? '');
-        $password = trim($post['password'] ?? '');
-
-        if (!$email || !$password) {
-            FlashMessage::error("Please fill in all fields.");
-            return $this->showSigninForm($request, $response, $args);
-        }
-
-        $user = $this->userModel->findByEmail($email);
-
-        if (!$user || !password_verify($password, $user['user_password_hashed'])) {
-            FlashMessage::error("Invalid email or password.");
-            return $this->showSigninForm($request, $response, $args);
-        }
-
-        UserContext::login([
-            'user_username'    => $user['user_username'],
-            'user_first_name'  => $user['user_first_name'],
-            'user_last_name'   => $user['user_last_name'],
-            'user_email'       => $user['user_email'],
-            'user_pfp_src'     => $user['user_pfp_src'] ?? null,
-            'is_admin'         => (strtoupper($user['user_role'] ?? '') === 'ADMIN'), // ✅ fixed
-        ]);
-
-        FlashMessage::success("Welcome back, " . htmlspecialchars($user['user_first_name']) . "!");
-
-        $routeContext = RouteContext::fromRequest($request);
-        $basePath = $routeContext->getBasePath();
-
-        return $response
-            ->withHeader('Location', $basePath . '/')
-            ->withStatus(302);
-    }
-
-    public function processForgotEmail(Request $request, Response $response, array $args): Response
-    {
-        $post = $request->getParsedBody();
-
-        $fname = trim($post['first_name'] ?? '');
-        $lname = trim($post['last_name'] ?? '');
-
-        if (!$fname || !$lname) {
-            FlashMessage::error("Please provide both first and last name.");
-            return $this->showForgotEmailForm($request, $response, $args);
-        }
-
-        $user = $this->userModel->findByName($fname, $lname);
-
-        if (!$user) {
-            FlashMessage::success(
-                "If an account exists with that name, the email has been sent."
+            $user_email = trim(
+                $data['user_email'] ?? ''
             );
-            return $this->showForgotEmailForm($request, $response, $args);
+
+            $user_password = $data['user_password'] ?? '';
+
+            if (empty($user_email) || empty($user_password)) {
+                throw new HttpBadRequestException(
+                    $request,
+                    'Email and password are required'
+                );
+            }
+
+            $user = $this->user_model->findUserByEmail($user_email);
+
+            if (!$user) {
+                throw new HttpUnauthorizedException(
+                    $request,
+                    'Invalid credentials'
+                );
+            }
+
+            if (!password_verify($user_password, $user['user_password'])) {
+                throw new HttpUnauthorizedException(
+                    $request,
+                    'Invalid credentials'
+                );
+            }
+
+            $_SESSION['user'] = [
+                'user_id' => $user['user_id'],
+                'user_handle' => $user['user_handle'],
+                'user_email' => $user['user_email'],
+                'user_role' => $user['user_role']
+            ];
+
+            return $this->renderJson($response, [
+                'status' => 'success',
+                'code' => 200,
+                'message' => 'Login successful',
+                'data' => [
+                    'user_id' => $user['user_id'],
+                    'user_handle' => $user['user_handle'],
+                    'user_role' => $user['user_role']
+                ]
+            ], 200);
+        } catch (HttpUnauthorizedException $e) {
+            return $this->renderJson($response, [
+                'status' => 'error',
+                'code' => 401,
+                'message' => $e->getMessage()
+            ], 401);
+        } catch (HttpBadRequestException $e) {
+            return $this->renderJson($response, [
+                'status' => 'error',
+                'code' => 400,
+                'message' => $e->getMessage()
+            ], 400);
+        } catch (Exception $e) {
+            return $this->renderJson($response, [
+                'status' => 'error',
+                'code' => 500,
+                'message' => 'Login failed',
+                'error' => $e->getMessage()
+            ], 500);
         }
-
-        FlashMessage::success(
-            "Your account email is: <strong>" . htmlspecialchars($user['user_email']) . "</strong>"
-        );
-
-        return $this->showForgotEmailForm($request, $response, $args);
     }
 
-    public function processForgotPassword(Request $request, Response $response, array $args): Response
+    public function logout(Request $request, Response $response): Response
     {
-        $post = $request->getParsedBody();
-        $identifier = trim($post['identifier'] ?? ''); // username OR email
+        $_SESSION = [];
+        if (ini_get('session.use_cookies')) {
 
-        if (!$identifier) {
-            FlashMessage::error("Please enter your username or email address.");
-            return $this->showForgotPasswordForm($request, $response, $args);
-        }
+            $params = session_get_cookie_params();
 
-        if (filter_var($identifier, FILTER_VALIDATE_EMAIL)) {
-            $user = $this->userModel->findByEmail($identifier);
-        } else {
-            $user = $this->userModel->findByUsername($identifier);
-        }
-
-        if (!$user) {
-            FlashMessage::success(
-                "If an account exists, password reset instructions have been sent."
+            setcookie(
+                session_name(),
+                '',
+                time() - 42000,
+                $params['path'],
+                $params['domain'],
+                $params['secure'],
+                $params['httponly']
             );
-            return $this->showForgotPasswordForm($request, $response, $args);
         }
 
-        $token = bin2hex(random_bytes(32));
-        $expiresAt = date('Y-m-d H:i:s', time() + 3600); // 1 hour
+        session_destroy();
 
-        $this->userModel->storePasswordResetToken(
-            $user['user_id'],
-            $token,
-            $expiresAt
-        );
-
-        FlashMessage::success(
-            "If an account exists, password reset instructions have been sent."
-        );
-
-        return $this->showForgotPasswordForm($request, $response, $args);
+        return $this->renderJson($response, [
+            'status' => 'success',
+            'code' => 200,
+            'message' => 'Logout successful'
+        ], 200);
     }
 
-    public function showProfile (Request $request, Response $response): Response {
-        $user = UserContext::getCurrentUser();
-
-        return $this -> render($response, "profileView.php", [$user]);
-    }
-
-    public function showWishlist (Request $request, Response $response): Response {
-        $user = UserContext::getCurrentUser();
-
-        return $this -> render($response, "wishlistView.php", [$user]);
-    }
-
-    public function logout(Request $request, Response $response, array $args): Response
+    public function me(Request $request, Response $response): Response
     {
-        UserContext::logout();
-        FlashMessage::success("You have been logged out.");
-        return $response->withHeader('Location', '/sign-in')->withStatus(302);
+        if (!isset($_SESSION['user'])) {
+            return $this->renderJson($response, [
+                'status' => 'error',
+                'code' => 401,
+                'message' => 'Unauthorized'
+            ], 401);
+        }
+
+        return $this->renderJson($response, [
+            'status' => 'success',
+            'code' => 200,
+            'data' => $_SESSION['user']
+        ], 200);
     }
 }
