@@ -1,0 +1,918 @@
+[
+  {
+    "ingredient_name": "Sugar",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Milk",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Sugar",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "vanilla pod",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Egg Yolks",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Egg",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Dulce de leche",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Tomato",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Romano Pepper",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Green Chilli",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Onion",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Garlic",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Parsley",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Red Pepper Paste",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Tomato Puree",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Pomegranate Molasses",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Pul Biber",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Sumac",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Dried Mint",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Extra Virgin Olive Oil",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Chicken",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Rice",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Green Pepper",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Red Pepper",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Mushrooms",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Sweetcorn",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Carrots",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Raisins",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Turmeric",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Kabse Spice",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Salt",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Black Pepper",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Mixed Beef Cuts",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Chorizo",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Morcilla",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Salt",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Bread",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Olive Oil",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Garlic",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Pork",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Sushi Rice",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Rice wine",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Caster Sugar",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Mayonnaise",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Rice wine",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Soy Sauce",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Cucumber",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Natural Yoghurt",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Lemon Juice",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Extra Virgin Olive Oil",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Dried Mint",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Cucumber",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Garlic",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Dried white corn",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Dried white beans",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Pumpkin",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Potatoes",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Beef",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Pork",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Chorizo",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Onion",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Paprika",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Salt",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Pepper",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Filo Pastry",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Minced Beef",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Onion",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Oil",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Salt",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Pepper",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Lentils",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Onion",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Carrots",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Tomato Puree",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Cumin",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Paprika",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Mint",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Thyme",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Black Pepper",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Red Pepper Flakes",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Vegetable Stock",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Water",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Sea Salt",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Beef Shin",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Onion",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Bay Leaf",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Potatoes",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Sunflower Oil",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Onion",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Carrots",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Beetroot",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Red Pepper",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Tinned Tomatos",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Prunes",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "White Cabbage",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Kidney Beans",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Creme Fraiche",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Dill",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Crusty Bread",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Chickpeas",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Tahini Paste",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Garlic Clove",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Greek Yogurt",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Lemon",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Potatoes",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Butter",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Cheese",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Onion",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Red Pepper",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Red Chilli Flakes",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Knafeh",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Unsalted Butter",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Yellow Food Colouring",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Mozzarella",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Cream Cheese",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Milk",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Sugar",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Corn Flour",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Sugar",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Water",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Rose water",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Lemon Juice",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Broad Beans",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Spring Onions",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Garlic Clove",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Parsley",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Cumin",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Baking Powder",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Cayenne Pepper",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Flour",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Vegetable Oil",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Beef",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Soy Sauce",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Lemon",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Garlic",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Onion",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Olive Oil",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Water",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Salt",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Olive Oil",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Raw tiger prawns",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Parsley",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Dry sherry",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Mussels",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Saffron",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Chorizo",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Onion",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Garlic",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Squid",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Tomato",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Paella Rice",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Broad Beans",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Lemon Zest",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Chickpea Flour",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Water",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Olive Oil",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Salt",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Pepper",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Strong white bread flour",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Caster Sugar",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Yeast",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Egg",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Sunflower Oil",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Poppy Seeds",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Minced Beef",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Olive Oil",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Sesame Seed Burger Buns",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Onion",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Iceberg Lettuce",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Cheese",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Dill Pickles",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Mayonnaise",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "White Wine Vinegar",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Pepper",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Mustard",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Onion Salt",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Garlic Powder",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Paprika",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Sunflower Oil",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Onion",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Garlic",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Chickpeas",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Ground Cumin",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Ground Coriander",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Parsley",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Egg",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Olive Oil",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Bacon",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Onion",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Celery",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Carrots",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Garlic",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Minced Beef",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Tomato Puree",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Chopped Tomatoes",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Honey",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Lasagne Sheets",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Creme Fraiche",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Mozzarella Balls",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Parmesan Cheese",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Basil Leaves",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Toor dal",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Water",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Salt",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Turmeric",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Ghee",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Chopped tomatoes",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Cumin seeds",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Mustard Seeds",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Bay Leaf",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Green Chilli",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Ginger",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Cilantro",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Red Pepper",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Salt",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Sugar",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Garam Masala",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Brown Lentils",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Rice",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Coriander",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Macaroni",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Chickpeas",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Onion",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Salt",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Vegetable Oil",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Vegetable Oil",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Beef Gravy",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Potatoes",
+    "ingredient_source": "MealDB"
+  },
+  {
+    "ingredient_name": "Cheese Curds",
+    "ingredient_source": "MealDB"
+  }
+]

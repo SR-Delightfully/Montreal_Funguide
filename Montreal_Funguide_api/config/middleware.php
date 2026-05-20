@@ -15,7 +15,7 @@ return function (App $app) {
     // TODO: add middleware for URI Sanatization and Validation
 
     $app->addBodyParsingMiddleware();
-    // $app->addRoutingMiddleware();
+    $app->addRoutingMiddleware();
 
     $errorMiddleware = $app->addErrorMiddleware(true, true, true);
     $errorMiddleware->getDefaultErrorHandler()->forceContentType(APP_MEDIA_TYPE_JSON);

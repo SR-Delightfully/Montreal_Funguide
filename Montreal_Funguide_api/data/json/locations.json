@@ -1,0 +1,30 @@
+[
+  {
+    "location_name": "Mount Royal Montreal",
+    "location_lat": 45.5085881,
+    "location_long": -73.5897111,
+    "location_type": "park",
+    "location_borough": "Montreal"
+  },
+  {
+    "location_name": "Old Port Montreal",
+    "location_lat": 45.5042344,
+    "location_long": -73.5529866,
+    "location_type": "park",
+    "location_borough": "Montreal"
+  },
+  {
+    "location_name": "Montreal Botanical Garden",
+    "location_lat": 45.5595419,
+    "location_long": -73.5612435,
+    "location_type": "park",
+    "location_borough": "Montreal"
+  },
+  {
+    "location_name": "La Fontaine Park Montreal",
+    "location_lat": 45.5262562,
+    "location_long": -73.5689672,
+    "location_type": "park",
+    "location_borough": "Montreal"
+  }
+]
