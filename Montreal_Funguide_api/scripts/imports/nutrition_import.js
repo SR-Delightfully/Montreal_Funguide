@@ -1,12 +1,14 @@
 const fs = require("fs");
 const path = require("path");
 
-const ingredientsPath = path.join(__dirname, "../json/ingredients.json");
-
+const ingredientsPath = path.join(
+  __dirname,
+  "../../data/json/ingredients.json",
+);
 const outputPath = path.join(__dirname, "../json/calories.json");
-
-const API_KEY = "YOUR_API_KEY_HERE";
-
+const API_KEY = fs
+  .readFileSync(path.join(__dirname, "../../config/env.php"), "utf-8")
+  .match(/ninjas_key'\]\s*=\s*'(.+?)'/)[1];
 async function run() {
   if (!fs.existsSync(ingredientsPath)) {
     console.log("ingredients.json missing");
@@ -14,7 +16,6 @@ async function run() {
   }
 
   const ingredients = JSON.parse(fs.readFileSync(ingredientsPath, "utf-8"));
-
   const output = [];
 
   for (const ingredient of ingredients) {
@@ -37,13 +38,9 @@ async function run() {
 
       output.push({
         ingredient_name: ingredient.ingredient_name,
-
         calories: nutr.calories ?? null,
-
         protein: nutr.protein_g ?? null,
-
         fat: nutr.fat_total_g ?? null,
-
         carbohydrates: nutr.carbohydrates_total_g ?? null,
       });
 
@@ -53,7 +50,10 @@ async function run() {
     }
   }
 
-  fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
+  fs.writeFileSync(
+    path.join(__dirname, "../../data/json/calories.json"),
+    JSON.stringify(output, null, 2),
+  );
 
   console.log("calories.json created");
 }

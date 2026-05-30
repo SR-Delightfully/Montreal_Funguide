@@ -24,7 +24,7 @@ use App\Controllers\Recipe\CalorieController;
 
 use App\Controllers\ConversionController;
 use App\Controllers\DistanceController;
-
+use App\Controllers\Fungi\FungiListController;
 use App\Helpers\DateTimeHelper;
 
 return static function (App $app): void {
@@ -44,19 +44,17 @@ return static function (App $app): void {
     $app->group('/auth', function ($auth) {
         $auth->post('/register', [AuthController::class, 'register']);
         $auth->post('/login', [AuthController::class, 'login']);
-    });
-
-    $app->group('/users', function ($users) {
-        $users->get('/users', [UserController::class, 'index']);
-        $users->get('/users/{id}', [UserController::class, 'show']);
-        $users->post('/users', [UserController::class, 'create']);
-        $users->put('/users/{id}', [UserController::class, 'update']);
-        $users->delete('/users/{id}', [UserController::class, 'delete']);
+        $auth->get('/users', [UserController::class, 'index']);
+        $auth->get('/users/{id}', [UserController::class, 'show']);
+        $auth->post('/users', [UserController::class, 'create']);
+        $auth->put('/users/{id}', [UserController::class, 'update']);
+        $auth->delete('/users/{id}', [UserController::class, 'delete']);
     });
 
     $app->group('/fungi', function ($fungi) {
-        $fungi->get('', [FungiController::class, 'index']);
-        $fungi->post('', [FungiController::class, 'create']);
+
+        $fungi->get('', [FungiListController::class, 'index']);
+        $fungi->post('', [FungiListController::class, 'create']);
 
         $fungi->get('/{id}', [FungiController::class, 'show']);
         $fungi->put('/{id}', [FungiController::class, 'update']);

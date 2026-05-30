@@ -3,33 +3,119 @@
 namespace App\Controllers\Recipe;
 
 use App\Controllers\BaseController;
+use Exception;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
+use Slim\Exception\HttpBadRequestException;
 
 class IngredientController extends BaseController
 {
     public function index(Request $request, Response $response): Response
     {
-        return $this->renderJson($response, ["ingredients" => []]);
+        try {
+            return $this->renderJson($response, [
+                "status" => "success",
+                "data" => []
+            ]);
+        } catch (Exception $e) {
+            return $this->renderJson($response, [
+                "status" => "error",
+                "message" => "Failed to fetch ingredients",
+                "error" => $e->getMessage()
+            ], 500);
+        }
     }
 
     public function create(Request $request, Response $response): Response
     {
-        return $this->renderJson($response, ["message" => "Create ingredient"]);
+        try {
+            $data = $request->getParsedBody();
+
+            if (!$data) {
+                throw new HttpBadRequestException($request, "Missing request body");
+            }
+
+            return $this->renderJson($response, [
+                "status" => "success",
+                "message" => "Ingredient created",
+                "data" => $data
+            ], 201);
+        } catch (Exception $e) {
+            return $this->renderJson($response, [
+                "status" => "error",
+                "message" => "Create failed",
+                "error" => $e->getMessage()
+            ], 500);
+        }
     }
 
     public function show(Request $request, Response $response, array $args): Response
     {
-        return $this->renderJson($response, ["ingredient_id" => $args['id']]);
+        try {
+            $id = (int)($args['id'] ?? 0);
+
+            if ($id <= 0) {
+                throw new HttpBadRequestException($request, "Invalid ingredient ID");
+            }
+
+            return $this->renderJson($response, [
+                "status" => "success",
+                "data" => ["ingredient_id" => $id]
+            ]);
+        } catch (Exception $e) {
+            return $this->renderJson($response, [
+                "status" => "error",
+                "message" => "Fetch failed",
+                "error" => $e->getMessage()
+            ], 500);
+        }
     }
 
     public function update(Request $request, Response $response, array $args): Response
     {
-        return $this->renderJson($response, ["message" => "Update ingredient"]);
+        try {
+            $id = (int)($args['id'] ?? 0);
+            $data = $request->getParsedBody();
+
+            if ($id <= 0) {
+                throw new HttpBadRequestException($request, "Invalid ingredient ID");
+            }
+
+            return $this->renderJson($response, [
+                "status" => "success",
+                "message" => "Ingredient updated",
+                "ingredient_id" => $id,
+                "data" => $data
+            ]);
+        } catch (Exception $e) {
+            return $this->renderJson($response, [
+                "status" => "error",
+                "message" => "Update failed",
+                "error" => $e->getMessage()
+            ], 500);
+        }
     }
 
     public function delete(Request $request, Response $response, array $args): Response
     {
-        return $this->renderJson($response, ["message" => "Delete ingredient"]);
+        try {
+            $id = (int)($args['id'] ?? 0);
+
+            if ($id <= 0) {
+                throw new HttpBadRequestException($request, "Invalid ingredient ID");
+            }
+
+            return $this->renderJson($response, [
+                "status" => "success",
+                "message" => "Ingredient deleted",
+                "ingredient_id" => $id
+            ]);
+        } catch (Exception $e) {
+            return $this->renderJson($response, [
+                "status" => "error",
+                "message" => "Delete failed",
+                "error" => $e->getMessage()
+            ], 500);
+        }
     }
 }

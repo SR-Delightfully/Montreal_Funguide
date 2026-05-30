@@ -1,352 +1,224 @@
 [
   {
-    "species_name": "Hypholoma subericaeum",
-    "species_family": "Strophariaceae",
-    "species_genus": "Hypholoma",
-    "species_gbif_id": 2533401,
-    "species_observation_date": "2026-01-10"
+    "species_name": "Bartheletia paradoxa",
+    "species_family": "Bartheletiaceae",
+    "species_genus": "Bartheletia",
+    "species_gbif_id": 7968309
   },
   {
-    "species_name": "Xanthoria parietina",
+    "species_name": "Aurantioporthe corni",
+    "species_family": "Cryphonectriaceae",
+    "species_genus": "Aurantioporthe",
+    "species_gbif_id": 9797559
+  },
+  {
+    "species_name": "Trametes versicolor",
+    "species_family": "Polyporaceae",
+    "species_genus": "Trametes",
+    "species_gbif_id": 2548311
+  },
+  {
+    "species_name": "Candelaria concolor",
+    "species_family": "Candelariaceae",
+    "species_genus": "Candelaria",
+    "species_gbif_id": 8732724
+  },
+  {
+    "species_name": "Oxneria fallax",
     "species_family": "Teloschistaceae",
-    "species_genus": "Xanthoria",
-    "species_gbif_id": 8197849,
-    "species_observation_date": "2026-01-01T00:00Z"
+    "species_genus": "Oxneria",
+    "species_gbif_id": 3431310
   },
   {
-    "species_name": "Phlyctis argena",
-    "species_family": "Phlyctidaceae",
-    "species_genus": "Phlyctis",
-    "species_gbif_id": 8620875,
-    "species_observation_date": "2026-01-01T00:00Z"
+    "species_name": "Fomitopsis betulina",
+    "species_family": "Fomitopsidaceae",
+    "species_genus": "Fomitopsis",
+    "species_gbif_id": 9819973
   },
   {
-    "species_name": "Graphis scripta",
-    "species_family": "Graphidaceae",
-    "species_genus": "Graphis",
-    "species_gbif_id": 7249709,
-    "species_observation_date": "2026-01-01T00:00Z"
+    "species_name": "Apiosporina morbosa",
+    "species_family": "Venturiaceae",
+    "species_genus": "Apiosporina",
+    "species_gbif_id": 5262861
   },
   {
-    "species_name": "Hypocenomyce scalaris",
-    "species_family": "Ophioparmaceae",
-    "species_genus": "Hypocenomyce",
-    "species_gbif_id": 3434172,
-    "species_observation_date": "2026-01-01T00:00Z"
+    "species_name": "Trametes gibbosa",
+    "species_family": "Polyporaceae",
+    "species_genus": "Trametes",
+    "species_gbif_id": 9208081
   },
   {
-    "species_name": "Physcia caesia",
-    "species_family": "Physciaceae",
-    "species_genus": "Physcia",
-    "species_gbif_id": 2608920,
-    "species_observation_date": "2026-01-01T00:00Z"
+    "species_name": "Cerioporus squamosus",
+    "species_family": "Polyporaceae",
+    "species_genus": "Cerioporus",
+    "species_gbif_id": 2547092
+  },
+  {
+    "species_name": "Xylaria polymorpha",
+    "species_family": "Xylariaceae",
+    "species_genus": "Xylaria",
+    "species_gbif_id": 8956209
+  },
+  {
+    "species_name": "Morchella americana",
+    "species_family": "Morchellaceae",
+    "species_genus": "Morchella",
+    "species_gbif_id": 7904574
+  },
+  {
+    "species_name": "Coprinellus micaceus",
+    "species_family": "Psathyrellaceae",
+    "species_genus": "Coprinellus",
+    "species_gbif_id": 2534578
+  },
+  {
+    "species_name": "Hypogymnia physodes",
+    "species_family": "Parmeliaceae",
+    "species_genus": "Hypogymnia",
+    "species_gbif_id": 7247635
+  },
+  {
+    "species_name": "Ganoderma applanatum",
+    "species_family": "Polyporaceae",
+    "species_genus": "Ganoderma",
+    "species_gbif_id": 2549834
+  },
+  {
+    "species_name": "Trametes cinnabarina",
+    "species_family": "Polyporaceae",
+    "species_genus": "Trametes",
+    "species_gbif_id": 9227816
+  },
+  {
+    "species_name": "Flavoparmelia caperata",
+    "species_family": "Parmeliaceae",
+    "species_genus": "Flavoparmelia",
+    "species_gbif_id": 2606178
+  },
+  {
+    "species_name": "Cerrena unicolor",
+    "species_family": "Cerrenaceae",
+    "species_genus": "Cerrena",
+    "species_gbif_id": 9070104
+  },
+  {
+    "species_name": "Phyllotopsis nidulans",
+    "species_family": "Phyllotopsidaceae",
+    "species_genus": "Phyllotopsis",
+    "species_gbif_id": 2531625
+  },
+  {
+    "species_name": "Hesperomyces harmoniae",
+    "species_family": "Laboulbeniaceae",
+    "species_genus": "Hesperomyces",
+    "species_gbif_id": 12222975
+  },
+  {
+    "species_name": "Bjerkandera adusta",
+    "species_family": "Phanerochaetaceae",
+    "species_genus": "Bjerkandera",
+    "species_gbif_id": 2543824
+  },
+  {
+    "species_name": "Protoparmeliopsis muralis",
+    "species_family": "Lecanoraceae",
+    "species_genus": "Protoparmeliopsis",
+    "species_gbif_id": 8622852
+  },
+  {
+    "species_name": "Fomes fomentarius",
+    "species_family": "Polyporaceae",
+    "species_genus": "Fomes",
+    "species_gbif_id": 8068867
+  },
+  {
+    "species_name": "Podosphaera physocarpi",
+    "species_family": "Erysiphaceae",
+    "species_genus": "Podosphaera",
+    "species_gbif_id": 8071572
+  },
+  {
+    "species_name": "Amanita frostiana",
+    "species_family": "Amanitaceae",
+    "species_genus": "Amanita",
+    "species_gbif_id": 8205204
+  },
+  {
+    "species_name": "Plicaturopsis crispa",
+    "species_family": "Amylocorticiaceae",
+    "species_genus": "Plicaturopsis",
+    "species_gbif_id": 2526725
+  },
+  {
+    "species_name": "Coprinellus flocculosus",
+    "species_family": "Psathyrellaceae",
+    "species_genus": "Coprinellus",
+    "species_gbif_id": 2534575
+  },
+  {
+    "species_name": "Coprinus comatus",
+    "species_family": "Agaricaceae",
+    "species_genus": "Coprinus",
+    "species_gbif_id": 7987658
+  },
+  {
+    "species_name": "Flammulina velutipes",
+    "species_family": "Physalacriaceae",
+    "species_genus": "Flammulina",
+    "species_gbif_id": 3341441
+  },
+  {
+    "species_name": "Bolbitius titubans",
+    "species_family": "Bolbitiaceae",
+    "species_genus": "Bolbitius",
+    "species_gbif_id": 9127230
+  },
+  {
+    "species_name": "Candolleomyces candolleanus",
+    "species_family": "Psathyrellaceae",
+    "species_genus": "Candolleomyces",
+    "species_gbif_id": 12008655
+  },
+  {
+    "species_name": "Kretzschmaria deusta",
+    "species_family": "Xylariaceae",
+    "species_genus": "Kretzschmaria",
+    "species_gbif_id": 2577023
   },
   {
     "species_name": "Schizophyllum commune",
     "species_family": "Schizophyllaceae",
     "species_genus": "Schizophyllum",
-    "species_gbif_id": 5241128,
-    "species_observation_date": "2026-01-01T00:00Z"
+    "species_gbif_id": 5241128
   },
   {
-    "species_name": "Plicatura nivea",
-    "species_family": null,
-    "species_genus": "Plicatura",
-    "species_gbif_id": 2526716,
-    "species_observation_date": "2026-01-01T00:00Z"
+    "species_name": "Parasola auricoma",
+    "species_family": "Psathyrellaceae",
+    "species_genus": "Parasola",
+    "species_gbif_id": 2534537
   },
   {
-    "species_name": "Ramalina farinacea",
-    "species_family": "Ramalinaceae",
-    "species_genus": "Ramalina",
-    "species_gbif_id": 2608167,
-    "species_observation_date": "2026-01-01T12:30Z/2026-01-01T13:20Z"
+    "species_name": "Psathyrella bipellis",
+    "species_family": "Psathyrellaceae",
+    "species_genus": "Psathyrella",
+    "species_gbif_id": 8100833
   },
   {
-    "species_name": "Evernia prunastri",
-    "species_family": "Parmeliaceae",
-    "species_genus": "Evernia",
-    "species_gbif_id": 2605261,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Taphrina betulina",
-    "species_family": "Taphrinaceae",
-    "species_genus": "Taphrina",
-    "species_gbif_id": 2593105,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Lecidella stigmatea",
-    "species_family": "Lecanoraceae",
-    "species_genus": "Lecidella",
-    "species_gbif_id": 2607131,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Melanohalea olivacea",
-    "species_family": "Parmeliaceae",
-    "species_genus": "Melanohalea",
-    "species_gbif_id": 2605326,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Physcia tenella",
-    "species_family": "Physciaceae",
-    "species_genus": "Physcia",
-    "species_gbif_id": 2608944,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Lecanora chlarotera",
-    "species_family": "Lecanoraceae",
-    "species_genus": "Lecanora",
-    "species_gbif_id": 2606780,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Fomitopsis pinicola",
-    "species_family": "Fomitopsidaceae",
-    "species_genus": "Fomitopsis",
-    "species_gbif_id": 2542395,
-    "species_observation_date": "2026-01-01T12:30Z/2026-01-01T13:20Z"
-  },
-  {
-    "species_name": "Lecanora pulicaris",
-    "species_family": "Lecanoraceae",
-    "species_genus": "Lecanora",
-    "species_gbif_id": 2606859,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Trametes ochracea",
+    "species_name": "Poronidulus conchifer",
     "species_family": "Polyporaceae",
-    "species_genus": "Trametes",
-    "species_gbif_id": 2548374,
-    "species_observation_date": "2026-01-01T00:00Z"
+    "species_genus": "Poronidulus",
+    "species_gbif_id": 2547299
   },
   {
-    "species_name": "Hypogymnia physodes",
-    "species_family": "Parmeliaceae",
-    "species_genus": "Hypogymnia",
-    "species_gbif_id": 7247635,
-    "species_observation_date": "2026-01-01T00:00Z"
+    "species_name": "Podosphaera mors-uvae",
+    "species_family": "Erysiphaceae",
+    "species_genus": "Podosphaera",
+    "species_gbif_id": 5255301
   },
   {
-    "species_name": "Melanelixia subaurifera",
-    "species_family": "Parmeliaceae",
-    "species_genus": "Melanelixia",
-    "species_gbif_id": 2605685,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Melanohalea exasperatula",
-    "species_family": "Parmeliaceae",
-    "species_genus": "Melanohalea",
-    "species_gbif_id": 2605335,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Illosporiopsis christiansenii",
-    "species_family": null,
-    "species_genus": "Illosporiopsis",
-    "species_gbif_id": 2562487,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Inonotus obliquus",
-    "species_family": "Hymenochaetaceae",
-    "species_genus": "Inonotus",
-    "species_gbif_id": 2521089,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Athelia arachnoidea",
-    "species_family": "Atheliaceae",
-    "species_genus": "Athelia",
-    "species_gbif_id": 7720839,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Corticium roseum",
-    "species_family": "Corticiaceae",
-    "species_genus": "Corticium",
-    "species_gbif_id": 9218477,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Phellinopsis conchata",
-    "species_family": "Hymenochaetaceae",
-    "species_genus": "Phellinopsis",
-    "species_gbif_id": 2520291,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Fomitiporia punctata",
-    "species_family": "Hymenochaetaceae",
-    "species_genus": "Fomitiporia",
-    "species_gbif_id": 2520671,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Chondrostereum purpureum",
-    "species_family": "Cyphellaceae",
-    "species_genus": "Chondrostereum",
-    "species_gbif_id": 2532944,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Hypogymnia tubulosa",
-    "species_family": "Parmeliaceae",
-    "species_genus": "Hypogymnia",
-    "species_gbif_id": 2606511,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Nephromopsis chlorophylla",
-    "species_family": "Parmeliaceae",
-    "species_genus": "Nephromopsis",
-    "species_gbif_id": 2605289,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Hypogymnia physodes",
-    "species_family": "Parmeliaceae",
-    "species_genus": "Hypogymnia",
-    "species_gbif_id": 7247635,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Platismatia glauca",
-    "species_family": "Parmeliaceae",
-    "species_genus": "Platismatia",
-    "species_gbif_id": 2605342,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Stereum rugosum",
-    "species_family": "Stereaceae",
-    "species_genus": "Stereum",
-    "species_gbif_id": 2553117,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Xylodon radula",
-    "species_family": "Schizoporaceae",
-    "species_genus": "Xylodon",
-    "species_gbif_id": 2519140,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Phellinus populicola",
-    "species_family": "Hymenochaetaceae",
-    "species_genus": "Phellinus",
-    "species_gbif_id": 2520859,
-    "species_observation_date": "2026-01-01T07:00Z/2026-01-01T14:50Z"
-  },
-  {
-    "species_name": "Pseudevernia furfuracea",
-    "species_family": "Parmeliaceae",
-    "species_genus": "Pseudevernia",
-    "species_gbif_id": 10932974,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Parmelia sulcata",
-    "species_family": "Parmeliaceae",
-    "species_genus": "Parmelia",
-    "species_gbif_id": 2605963,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Phaeophyscia orbicularis",
-    "species_family": "Physciaceae",
-    "species_genus": "Phaeophyscia",
-    "species_gbif_id": 2609145,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Peniophora incarnata",
-    "species_family": "Peniophoraceae",
-    "species_genus": "Peniophora",
-    "species_gbif_id": 2552308,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Hydnoporia tabacina",
-    "species_family": "Hymenochaetaceae",
-    "species_genus": "Hydnoporia",
-    "species_gbif_id": 10700730,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Phlebia radiata",
-    "species_family": "Meruliaceae",
-    "species_genus": "Phlebia",
-    "species_gbif_id": 2545089,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Trametes hirsuta",
-    "species_family": "Polyporaceae",
-    "species_genus": "Trametes",
-    "species_gbif_id": 8367739,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Phlyctis argena",
-    "species_family": "Phlyctidaceae",
-    "species_genus": "Phlyctis",
-    "species_gbif_id": 8620875,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Polycauliona candelaria",
-    "species_family": "Teloschistaceae",
-    "species_genus": "Polycauliona",
-    "species_gbif_id": 7487512,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Parmelia sulcata",
-    "species_family": "Parmeliaceae",
-    "species_genus": "Parmelia",
-    "species_gbif_id": 2605963,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Pseudevernia furfuracea",
-    "species_family": "Parmeliaceae",
-    "species_genus": "Pseudevernia",
-    "species_gbif_id": 10932974,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Vulpicida pinastri",
-    "species_family": "Parmeliaceae",
-    "species_genus": "Vulpicida",
-    "species_gbif_id": 2605831,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Phaeophyscia ciliata",
-    "species_family": "Physciaceae",
-    "species_genus": "Phaeophyscia",
-    "species_gbif_id": 2609167,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Stereum sanguinolentum",
-    "species_family": "Stereaceae",
-    "species_genus": "Stereum",
-    "species_gbif_id": 2553068,
-    "species_observation_date": "2026-01-01T00:00Z"
-  },
-  {
-    "species_name": "Tremella aurantia",
-    "species_family": "Tremellaceae",
-    "species_genus": "Tremella",
-    "species_gbif_id": 7830431,
-    "species_observation_date": "2026-01-01T00:00Z"
+    "species_name": "Xylaria hypoxylon",
+    "species_family": "Xylariaceae",
+    "species_genus": "Xylaria",
+    "species_gbif_id": 5255147
   }
 ]

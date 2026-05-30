@@ -2,30 +2,73 @@
 
 namespace App\Middleware;
 
-use App\Helpers\SessionManager;
-use App\Helpers\FlashMessage;
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
+
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
+
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface as RequestHandler;
+
 use Slim\Routing\RouteContext;
-use App\Helpers\UserContext;
+
+use App\Helpers\Core\AppSettings;
 
 class GuestAuthMiddleware implements MiddlewareInterface
 {
-    public function process(Request $request, RequestHandler $handler): Response
+    private AppSettings $settings;
+
+    public function __construct(AppSettings $settings)
     {
-        $isAuthenticated = UserContext::isLoggedIn();
+        $this->settings = $settings;
+    }
 
-        if ($isAuthenticated) {
-            FlashMessage::success("You are already logged in.");
+    public function process(
+        Request $request,
+        RequestHandler $handler
+    ): Response {
 
-            $routeParser = RouteContext::fromRequest($request)->getRouteParser();
-            $dashboardUrl = $routeParser->urlFor('dashboard.load');
+        $authHeader = $request->getHeaderLine('Authorization');
 
-            $psr17Factory = new \Nyholm\Psr7\Factory\Psr17Factory();
-            return $psr17Factory->createResponse(302)
-                                ->withHeader('Location', $dashboardUrl);
+        if (
+            !empty($authHeader) &&
+            str_starts_with($authHeader, 'Bearer ')
+        ) {
+
+            try {
+
+                $jwt = str_replace(
+                    'Bearer ',
+                    '',
+                    $authHeader
+                );
+
+                $jwt_secret = $this->settings->get('jwt');
+
+                JWT::decode(
+                    $jwt,
+                    new Key($jwt_secret['secret'], 'HS256')
+                );
+
+                $routeParser = RouteContext::fromRequest($request)
+                    ->getRouteParser();
+
+                $dashboardUrl = $routeParser
+                    ->urlFor('dashboard.load');
+
+                $psr17Factory = new \Nyholm\Psr7\Factory\Psr17Factory();
+
+                return $psr17Factory
+                    ->createResponse(302)
+                    ->withHeader('Location', $dashboardUrl);
+
+            }
+            catch (\Exception $e) {
+
+                // invalid token = continue as guest
+
+            }
         }
 
         return $handler->handle($request);

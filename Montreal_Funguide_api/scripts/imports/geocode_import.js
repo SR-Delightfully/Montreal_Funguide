@@ -29,19 +29,15 @@ async function run() {
 
     output.push({
       location_name: location,
-
       location_lat: parseFloat(item.lat),
-
       location_long: parseFloat(item.lon),
-
       location_type: "park",
-
       location_borough: "Montreal",
     });
   }
 
   fs.writeFileSync(
-    path.join(__dirname, "../json/locations.json"),
+    path.join(__dirname, "../../data/json/locations.json"),
     JSON.stringify(output, null, 2),
   );
 

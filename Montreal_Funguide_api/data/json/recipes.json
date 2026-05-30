@@ -30,6 +30,16 @@
     "recipe_tags": null
   },
   {
+    "recipe_external_id": "53436",
+    "recipe_name": "Jajek",
+    "recipe_source": "MealDB",
+    "recipe_category": "Side",
+    "recipe_area": null,
+    "recipe_instructions": "Place yogurt, water, garlic and salt in food processor and process for a few seconds. Transfer to a bowl and mix with mint and cucumber.  Best served chilled for a few hours. \r\n\r\nWhen serving, add a few ice cubes to add additional refreshment!  Makes about four servings.",
+    "recipe_thumbnail": "https://www.themealdb.com/images/media/meals/8x0vgs1780090328.jpg",
+    "recipe_tags": null
+  },
+  {
     "recipe_external_id": "53133",
     "recipe_name": "Asado",
     "recipe_source": "MealDB",
@@ -88,6 +98,26 @@
     "recipe_instructions": "Fry the finely chopped onions and minced meat in oil. Add the salt and pepper. Grease a round baking tray and put a layer of pastry in it. Cover with a thin layer of filling and cover this with another layer of filo pastry which must be well coated in oil. Put another layer of filling and cover with pastry. When you have five or six layers, cover with filo pastry, bake at 200ºC/392ºF for half an hour and cut in quarters and serve.",
     "recipe_thumbnail": "https://www.themealdb.com/images/media/meals/tkxquw1628771028.jpg",
     "recipe_tags": "Streetfood, Onthego"
+  },
+  {
+    "recipe_external_id": "53439",
+    "recipe_name": "Arepa",
+    "recipe_source": "MealDB",
+    "recipe_category": "Side",
+    "recipe_area": null,
+    "recipe_instructions": "Put the corn flour in a bowl and add the salted water little by little, mixing with the flour until all the water has been used and the flour has become a dough. Let it rest for five minutes. Now, shape the dough into round rolls about 3 inches in diameter and 1/2 inch thick. In a lightly greased skillet, slowly cook the arepas until a crust forms on each side. Now place them into a casserole and bake in the oven at 350 degrees for approximately 20 minutes, until the arepas sound hollow when tapped.\r\n\r\nTo enhance taste: instead of using just water, use chicken or beef broth.",
+    "recipe_thumbnail": "https://www.themealdb.com/images/media/meals/ejht7k1780092390.jpg",
+    "recipe_tags": null
+  },
+  {
+    "recipe_external_id": "53399",
+    "recipe_name": "Firni",
+    "recipe_source": "MealDB",
+    "recipe_category": "Dessert",
+    "recipe_area": null,
+    "recipe_instructions": "Pour 1 cup of milk into a small bowl, add the cornstarch and whisk them well until smooth.\r\n\r\nPour the rest of the milk into a non-stick saucepan, adding the sugar and cardamom (and rosewater, if desired) whilst cooking over medium heat.\r\n\r\nBefore it starts to boil, slowly add the milk and cornstarch mixture to the pan, whisking constantly to avoid lumps. Keep stirring until the mixture increases in thickness.\r\n\r\nTake the pan off the heat and pour into a large shallow serving bowl. Let it cool at room temperature, and then put in the refrigerator for about 1 – 2 hours.\r\n\r\nFinally, sprinkle your Firni with sliced almonds and pistachios and serve!",
+    "recipe_thumbnail": "https://www.themealdb.com/images/media/meals/dm8kee1779553541.jpg",
+    "recipe_tags": null
   },
   {
     "recipe_external_id": "52977",
@@ -180,16 +210,6 @@
     "recipe_tags": null
   },
   {
-    "recipe_external_id": "53310",
-    "recipe_name": "Challah",
-    "recipe_source": "MealDB",
-    "recipe_category": "Side",
-    "recipe_area": "Polish",
-    "recipe_instructions": "step 1\r\nCombine the yeast, a pinch of the sugar and a couple tablespoons of lukewarm water in a small bowl. Stir to dissolve the yeast, then leave for 10 mins until foamy.\r\n\r\nstep 2\r\nMeanwhile, combine the flour, the remaining sugar and 2 tsp fine salt in a large bowl. Make a well in the centre, then add half the beaten egg, the yeast mixture and the oil. Pour in 200ml lukewarm water (it should feel slightly warm to the touch) and stir with a spoon, then mix using one hand, keeping the other clean while you bring the dough together. If there are a lot of very dry bits, gradually add a little water to just bring it together – you don't want it to get too wet and sticky. The dough should be moist, but not soggy.\r\n\r\nstep 3\r\nOnce the dough has come together, turn it out onto a lightly floured surface. Knead using both hands for 10 mins until smooth and a bit springy. If it gets very sticky, add a very small amount of flour – as little as possible. A dough scraper is useful if the dough is sticking to the work surface. Stretch the sides of the dough down and pull together to form a ball. Lightly oil a bowl, then lightly roll the dough ball around the bowl so it's coated in the oil. Cover with a clean tea towel and leave in a warm place for 1 hr, or until dough has doubled in size.\r\n\r\nstep 4\r\nLine a baking sheet with baking parchment. Turn the dough out onto a clean work surface and divide into three equal pieces, weighing for accuracy, if you like. Roll each piece into a long sausage shape about 25cm long, tapering them slightly at both ends. Lay the pieces out in front of you, parallel to one another with a couple centimetres between each. Bring the sausages together at the top end, then plait them down the length, tucking in the ends when you reach the bottom. Carefully transfer the loaf to the prepared baking sheet and loosely cover with a clean tea towel. Leave to rise until puffy and billowy, about 40 mins.\r\n\r\nstep 5\r\nMeanwhile, heat the oven to 200C/180C fan/gas 6. Gently brush the rest of the beaten egg all over the challah, getting it into all the crevices, and sprinkle with the poppy or sesame seeds, if using. Bake on a middle shelf of the oven for 25-30 mins, until the loaf is golden brown underneath and sounds hollow when tapped. Check after about 15 mins – if the top of the loaf has started to get too dark, cover it with foil. Leave to cool on a wire rack, then serve.",
-    "recipe_thumbnail": "https://www.themealdb.com/images/media/meals/fm01ky1764366365.jpg",
-    "recipe_tags": null
-  },
-  {
     "recipe_external_id": "53013",
     "recipe_name": "Big Mac",
     "recipe_source": "MealDB",
@@ -207,16 +227,6 @@
     "recipe_area": "Turkish",
     "recipe_instructions": "step 1\r\nHeat 1 tbsp oil in a large pan, then fry the onion and garlic over a low heat for 5 mins until softened. Tip into a large mixing bowl with the chickpeas and spices, then mash together with a fork or potato masher until the chickpeas are totally broken down. Stir in the parsley or dried herbs, with seasoning to taste. Add the egg, then squish the mixture together with your hands.\r\n\r\nstep 2\r\nMould the mix into 6 balls, then flatten into patties. Heat the remaining oil in the pan, then fry the falafels on a medium heat for 3 mins on each side, until golden brown and firm. Serve hot or cold with couscous, pitta bread or salad.",
     "recipe_thumbnail": "https://www.themealdb.com/images/media/meals/u5e9qq1763795441.jpg",
-    "recipe_tags": null
-  },
-  {
-    "recipe_external_id": "52844",
-    "recipe_name": "Lasagne",
-    "recipe_source": "MealDB",
-    "recipe_category": "Pasta",
-    "recipe_area": "Italian",
-    "recipe_instructions": "Heat the oil in a large saucepan. Use kitchen scissors to snip the bacon into small pieces, or use a sharp knife to chop it on a chopping board. Add the bacon to the pan and cook for just a few mins until starting to turn golden. Add the onion, celery and carrot, and cook over a medium heat for 5 mins, stirring occasionally, until softened.\r\nAdd the garlic and cook for 1 min, then tip in the mince and cook, stirring and breaking it up with a wooden spoon, for about 6 mins until browned all over.\r\nStir in the tomato purée and cook for 1 min, mixing in well with the beef and vegetables. Tip in the chopped tomatoes. Fill each can half full with water to rinse out any tomatoes left in the can, and add to the pan. Add the honey and season to taste. Simmer for 20 mins.\r\nHeat oven to 200C/180C fan/gas 6. To assemble the lasagne, ladle a little of the ragu sauce into the bottom of the roasting tin or casserole dish, spreading the sauce all over the base. Place 2 sheets of lasagne on top of the sauce overlapping to make it fit, then repeat with more sauce and another layer of pasta. Repeat with a further 2 layers of sauce and pasta, finishing with a layer of pasta.\r\nPut the crème fraîche in a bowl and mix with 2 tbsp water to loosen it and make a smooth pourable sauce. Pour this over the top of the pasta, then top with the mozzarella. Sprinkle Parmesan over the top and bake for 25–30 mins until golden and bubbling. Serve scattered with basil, if you like.",
-    "recipe_thumbnail": "https://www.themealdb.com/images/media/meals/wtsvxx1511296896.jpg",
     "recipe_tags": null
   },
   {
@@ -238,15 +248,5 @@
     "recipe_instructions": "Cook the lentils. Bring lentils and 4 cups of water to a boil in a medium pot or saucepan over high heat. Reduce the heat to low and cook until lentils are just tender (15-17 minutes). Drain from water and season with a little salt. (Note: when the lentils are ready, they should not be fully cooked. They should be only par-cooked and still have a bite to them as they need to finish cooking with the rice).\r\nNow, for the rice. Drain the rice from its soaking water. Combine the par-cooked lentils and the rice in the saucepan over medium-high heat with 1 tbsp cooking oil, salt, pepper, and coriander. Cook for 3 minutes, stirring regularly. Add warm water to cover the rice and lentil mixture by about 1 1/2 inches (you’ll probably use about 3 cups of water here). Bring to a boil; the water should reduce a bit. Now cover and cook until all the liquid has been absorbed and both the rice and lentils are well cooked through (about 20 minutes).  Keep covered and undisturbed for 5 minutes or so.\r\nNow make the pasta. While the rice and lentils are cooking, make the pasta according to package instructions by adding the elbow pasta to boiling water with a dash of salt and a little oil. Cook until the pasta is al dente. Drain.\r\nCover the chickpeas and warm in the microwave briefly before serving.\r\n\r\nMake the crispy onion topping. \r\n\r\nSprinkle the onion rings with salt, then toss them in the flour to coat. Shake off excess flour.\r\nIn a large skillet, heat the cooking oil over medium-high heat, cook the onion rings, stirring often, until they turn a nice caramelized brown. Onions must be crispy, but not burned (15-20 minutes).",
     "recipe_thumbnail": "https://www.themealdb.com/images/media/meals/4er7mj1598733193.jpg",
     "recipe_tags": null
-  },
-  {
-    "recipe_external_id": "52804",
-    "recipe_name": "Poutine",
-    "recipe_source": "MealDB",
-    "recipe_category": "Miscellaneous",
-    "recipe_area": "Canadian",
-    "recipe_instructions": "Heat oil in a deep fryer or deep heavy skillet to 365°F (185°C).\r\nWarm gravy in saucepan or microwave.\r\nPlace the fries into the hot oil, and cook until light brown, about 5 minutes.\r\nRemove to a paper towel lined plate to drain.\r\nPlace the fries on a serving platter, and sprinkle the cheese over them.\r\nLadle gravy over the fries and cheese, and serve immediately.",
-    "recipe_thumbnail": "https://www.themealdb.com/images/media/meals/uuyrrx1487327597.jpg",
-    "recipe_tags": "UnHealthy,Speciality,HangoverFood"
   }
 ]
